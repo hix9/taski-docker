@@ -139,7 +139,7 @@ jobs:
       - name: Copy docker-compose.yml via ssh
         uses: appleboy/scp-action@master
         with:
-          host: ${{sercets.HOST }}
+          host: ${{ sercets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
